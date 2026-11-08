@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>salom</h1>
+
+<header>
+  <a href="#" class="logo">☕ Coffee House</a>
+  <nav>
+    <a href="#home">Асосӣ</a>
+    <a href="#menu">Меню</a>
+    <a href="#about">Дар бораи мо</a>
+    <a href="#contact">Тамос</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="small">Хуш омадед ба Coffee House</p>
+    <h1>Қаҳваи беҳтарин<br>барои рӯзи беҳтарин!</h1>
+    <p>Ҳар як пиёлаи қаҳва бо муҳаббат тайёр мешавад.</p>
+    <a href="#menu" class="btn">Менюро бинед</a>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2>Менюи мо</h2>
+  <p>Қаҳваҳои дӯстдоштаи худро интихоб кунед</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Coffee">
+      <h3>Espresso</h3>
+      <p>Қаҳваи классикӣ ва болаззат</p>
+      <strong>15 сомонӣ</strong>
+      <button onclick="order('Espresso')">Фармоиш</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Latte">
+      <h3>Latte</h3>
+      <p>Қаҳва бо шири нарм</p>
+      <strong>20 сомонӣ</strong>
+      <button onclick="order('Latte')">Фармоиш</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Қаҳва бо кафки ширӣ</p>
+      <strong>18 сомонӣ</strong>
+      <button onclick="order('Cappuccino')">Фармоиш</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Дар бораи мо</h2>
+  <p>Мо барои шумо қаҳваи хушсифат ва хизматрасонии беҳтарин пешниҳод мекунем.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Бо мо дар тамос бошед</h2>
+  <p>Суроға: Душанбе, Тоҷикистон</p>
+  <p>Телефон: +992 900 00 00 00</p>
+</section>
+
+<footer>
+  <p>© 2026 Coffee House | Ҳамаи ҳуқуқҳо ҳифз шудаанд.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
